@@ -16,12 +16,18 @@
 // Main page layout
 @import 'layout/main-offer';
 @import 'layout/header';
+@import 'layout/main';
+@import 'layout/testimonials';
 @import 'layout/footer';
 
-
-// Component
+// Components
+@import 'components/container';
+@import 'components/box-shadow';
+@import 'components/link';
+@import 'components/link_orange';
 @import 'components/list';
-@import 'components/logo';  
+@import 'components/section-title';
+@import 'components/logo';
 @import 'components/form';
 @import 'components/button';
 @import 'components/riviews-slider';
