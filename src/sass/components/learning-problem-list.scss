@@ -4,8 +4,31 @@
     // position: relative;
 }
 
+.sec-problems__wrapper,
+.sec-program__wrapper {
+    margin: 0 auto;
+}
+
+.sec-problems__content-wrapper,
+.sec-program__content-wrapper {
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.points__points-wrapper {
+    max-width: 280px;
+    background-color: $offwhite-bg-color;
+    padding-bottom: 28px;
+}
+
+.points__content-wrapper {
+    max-width: 224px;
+    margin: 0 auto;
+}
+
 .sec-problems {
     background-color: $black-bg-color;
+    padding-top: 120px;
     // position: relative;
 }
 
@@ -27,9 +50,9 @@
     position: absolute;
     background-color: #546264;
     width: 2px;
-    height: 1260px;
+    height: 92%;
     left: 0;
-    top: 13px;
+    top: 14px;
 }
 
 .semesters__item {
@@ -46,7 +69,7 @@
     height: 10px;
     border-radius: 5px;
     left: -29px;
-    top: 13px;
+    top: 11px;
 }
 
 .semesters__title {
@@ -55,6 +78,7 @@
     font-size: 29px;
     font-weight: 700;
     margin-bottom: 28px;
+    font-family: $main-font;
 }
 
 .subjects {}
@@ -69,6 +93,7 @@
     line-height: 1.4;
     padding-left: 35px;
     margin-bottom: 22px;
+    font-family: $main-font;
 }
 
 .subjects__title::before {
@@ -82,6 +107,10 @@
     top: 13px;
 }
 
+.subjects__title_hidden {
+    visibility: hidden;
+}
+
 .topics {}
 
 .topics__item {}
@@ -91,6 +120,7 @@
     font-size: 19px;
     line-height: 1.6;
     margin-bottom: 12px;
+    font-family: $main-font;
 }
 
 
@@ -118,6 +148,7 @@
     position: relative;
     padding-left: 35px;
     margin-bottom: 16px;
+    font-family: $main-font;
 }
 
 .points__title::before {
@@ -137,4 +168,5 @@
     line-height: 1.4;
     font-weight: 700;
     margin-bottom: 22px;
+    font-family: $main-font;
 }
