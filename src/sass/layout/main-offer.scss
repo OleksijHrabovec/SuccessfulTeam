@@ -37,6 +37,7 @@
 }
 .main-offer__item {
   display: flex;
+  position: relative;
   font-weight: 700;
 }
 
@@ -52,4 +53,18 @@
   border: 2px solid $orange-txt-color;
   width:58px;
   height:58px;
+}
+.main-offer__item-text {
+  margin: 0;
+  line-height: 27px;
+}
+.main-offer__item-text::before {
+  content: "";
+  position: absolute;
+  background-color: $white-txt-color;
+  display: block;
+  height: 36px;
+  width: 40px;
+  top: 12px;
+  left: 25px;
 }
