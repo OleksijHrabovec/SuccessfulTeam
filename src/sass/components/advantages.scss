@@ -2,7 +2,15 @@
     display: flex;
     margin: 0 auto;
 }
-
+.section__title {
+    display: flex;
+    justify-content: center;
+}
+.advantage__box {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
 .Advantage__box-icons {
 display: flex;
 margin: 0 auto;
@@ -14,13 +22,13 @@ list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-     padding:  rem(30) rem(15);
-    box-shadow: 0 0 rem(30) rgba(238,238,238,0.5);
+     padding:  rem(10) rem(15);
+     box-shadow: rem(4) 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
      height: rem(268);
-     width: rem(240);
+     width: rem(230);
      display: block;
      background-color: #ffffff;
-
+    margin-bottom: rem(17);
 }
 .advantage__box-icons-svg {
     height: rem(50);
@@ -59,7 +67,8 @@ list-style: none;
     height: rem(2);
     left: rem(120);
     right: rem(0);
-    top: 11.438rem
+    top: 10.438rem;
+    display: block;
    }
 
    .advantage__icons-item:hover .advantage__title,
@@ -71,4 +80,4 @@ list-style: none;
        background-color: white;
    }
 
-
+    
