@@ -57,7 +57,7 @@ list-style: none;
 .advantage__icons-item:hover,
 .advantage__icons-item:focus {
     background-color: rgb(255,107,8);
-    color: #ffffff;
+    transition: 400ms linear;
 }
 .advantage__title::after {
     background-color: rgb(255, 107, 8);
