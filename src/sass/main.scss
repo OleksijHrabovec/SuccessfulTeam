@@ -10,7 +10,6 @@
 
 // Base style
 @import 'base/reset';
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap');
 @import 'base/fonts';
 @import 'base/typography';
 
@@ -18,9 +17,11 @@
 @import 'layout/header';
 @import 'layout/main';
 @import 'layout/testimonials';
+@import 'layout/main-offer';
 @import 'layout/footer';
 
 // Components
+@import 'components/logo';  
 @import 'components/container';
 @import 'components/box-shadow';
 @import 'components/link';
@@ -28,9 +29,14 @@
 @import 'components/list';
 @import 'components/section-title';
 @import 'components/logo';
+
+// Component
+@import 'components/list';
+@import 'components/logo';  
 @import 'components/form';
 @import 'components/button';
 @import 'components/riviews-slider';
 @import 'components/teacher-block';
 @import 'components/guarantees-block';
 @import 'components/learning-problem-list';
+@import 'components/container.scss';
