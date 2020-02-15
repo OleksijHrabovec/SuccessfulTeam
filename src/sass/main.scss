@@ -7,17 +7,14 @@
 @import 'utils/variables';
 @import 'utils/mixins';
 @import 'utils/functions';
-
 // Base style
 @import 'base/reset';
 @import 'base/fonts';
 @import 'base/typography';
-
 // Main page layout
 @import 'layout/header';
 @import 'layout/main';
 @import 'layout/footer';
-
 // Components
 @import 'components/container';
 @import 'components/link';
