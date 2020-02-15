@@ -39,16 +39,15 @@ body {
   
 
 
+
 .light-background {
-  background-color: #d1d1d0;
-  height: 400px;
-  margin-bottom: 40px;
+  background-color: $guarantees-bg-color;
+  height: 100%;
+  padding-bottom: 40px;
 }
 
-.section__title {
-  margin: 0 auto;
+.guarantees__title {
   text-align: center;
-  margin-bottom: 26px;
 }
 
 .color__text {
@@ -56,7 +55,6 @@ body {
 }
 
 .guarantees__list {
-  background-color: #d1d1d0;
   margin: 0;
   padding: 0;
   display: flex;
@@ -69,30 +67,22 @@ body {
   position: relative;
   list-style: none;
   margin: 0;
+  line-height: 24px;
+  font-size: 11px;
+  font-weight: 500;
   padding-top: 28px;
-  padding-left: 2.188rem;
+  padding-left: 40px;
 }
 
-// .guarantees__item::before {
-//   content: "";
-//   display: table;
-//   clear: both;
-//   position: absolute;
-//   border-left: 1px solid;
-//   border-left-style: dotted;
-//   height: 98%;
-//   color: #9d9d95;
-//   right: 94%;
-// }
 
-.guarantees__item::before:not(:last-child) {
+.guarantees__item:not(:last-child)::before {
   content: "";
   display: table;
   clear: both;
   position: absolute;
   border-left: 1px solid;
   border-left-style: dotted;
-  height: 98%;
+  height: 110%;
   color: #9d9d95;
   right: 94%;
 }
@@ -105,10 +95,9 @@ body {
   width: 20px;
   height: 20px;
   fill: #ffffff;
-  top: 28%;
+  top: 28px;
   background-position: center;
   background-repeat: no-repeat;
-  right: 90%;
+  right: 91%;
   background-color: #9d9d44;
-  background-image: url(src/images/icons/fire/Fire.svg);
 }
