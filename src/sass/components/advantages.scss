@@ -11,16 +11,22 @@ list-style: none;
 
 .advantage__icons-item{
     position: relative;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding:  rem(30) rem(15);
-    margin-bottom: rem(17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     padding:  rem(30) rem(15);
+    box-shadow: 0 0 rem(30) rgba(238,238,238,0.5);
      height: rem(268);
-     width: rem(230);
+     width: rem(240);
      display: block;
      background-color: #ffffff;
 
+}
+.advantage__box-icons-svg {
+    height: rem(50);
+    width: auto;
+    justify-content: center;
+    margin-top: rem(30);
 }
 .advantage__title {
     font-size: rem(13);
@@ -28,6 +34,7 @@ list-style: none;
     color: #000000;
     font-weight: 500;
     text-align: center;
+    margin-bottom: rem(45);
 }
 .advantage__text {
     font-size: rem(11);
@@ -37,7 +44,7 @@ list-style: none;
     line-height: rem(20);
     color: rgb(133,133,133);
     text-align: center;
-    margin-bottom: rem(30);
+   
 }
 .advantage__icons-item:hover,
 .advantage__icons-item:focus {
@@ -52,5 +59,16 @@ list-style: none;
     height: rem(2);
     left: rem(120);
     right: rem(0);
-    top: -5.562rem;
+    top: 11.438rem
    }
+
+   .advantage__icons-item:hover .advantage__title,
+   .advantage__icons-item:hover .advantage__text {
+       color: white;
+   }
+
+   .advantage__icons-item:hover .advantage__title::after {
+       background-color: white;
+   }
+
+
