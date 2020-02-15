@@ -18,20 +18,16 @@
 @import 'layout/main';
 @import 'layout/footer';
 
-// Components
-<<<<<<< HEAD
-@import 'components/container';
-@import 'components/box-shadow';
-@import 'components/link';
+
+// Component
 @import 'components/list';
-@import 'components/section-title';
-@import 'components/logo';
-=======
 @import 'components/logo';  
->>>>>>> a3a0a641b0da3c2d60d5b2c28947fca856b292b2
 @import 'components/form';
 @import 'components/button';
 @import 'components/riviews-slider';
 @import 'components/teacher-block';
 @import 'components/guarantees-block';
 @import 'components/learning-problem-list';
+@import 'components/container.scss';
+
+

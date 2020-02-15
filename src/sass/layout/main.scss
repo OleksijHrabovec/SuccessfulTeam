@@ -1,3 +1,38 @@
 .main-offer {
   padding: 60px 0 70px;
 }
+.main-offer__title {
+  margin-bottom: 30px;
+}
+.main-offer__text {
+  font-size: 15px;
+}
+.main-offer__text_grey {
+  color: $grey-txt-color;
+}
+.main-offer__text_black {
+  color: $dark-txt-color;
+}
+.main-offer__text_orange {
+  color: $orange-txt-color;
+}
+.main-offer__btn {
+  margin-bottom: 37px;
+}
+.main-offer__text_low {
+  margin-bottom: 37px;
+}
+.main-offer__img {
+  margin-bottom: 80px;
+}
+.main-offer__item {
+  display: flex;
+}
+
+.main-offer__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.main-offer__svg {
+  border: 2px solid $orange-txt-color;
+
+}
