@@ -1,12 +1,12 @@
 .btn {
-    width: 250px;
-    height: 48px;
+    width: rem(250);
+    height: rem(48);
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     border: none;
-    font-size: 11px;
+    font-size: rem(11);
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: rem(1);
     display: flex;
     justify-content: center;
 }
