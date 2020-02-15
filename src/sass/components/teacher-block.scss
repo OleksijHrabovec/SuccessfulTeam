@@ -1,8 +1,29 @@
 .img-wrapper {
-  //   background-color: $orange-txt-color;
-  width: rem(279);
   height: rem(214);
-  background-image: url(//build/images/photos/teacher@1x.jpg);
+  background-image: url(../images/photos/teacher@1x.jpg);
   background-position: 0 0;
   background-size: cover;
+}
+
+.section-teacher {
+  &__name {
+    @include font-settings(rem(16), rem(30));
+    font-family: 'Montserrat';
+    color: $black-bg-color;
+    font-weight: bold;
+  }
+
+  &__list-item {
+    padding: rem(35);
+    position: relative;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/icons/check/Check.svg);
+    }
+  }
 }

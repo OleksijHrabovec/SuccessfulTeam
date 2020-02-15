@@ -15,15 +15,31 @@
 @import 'layout/header';
 @import 'layout/main';
 @import 'layout/footer';
+<<<<<<< HEAD
 // Components
 @import 'components/container';
 @import 'components/link';
 @import 'components/list';
 @import 'components/section-title';
 @import 'components/logo';
+=======
+
+
+// Component
+@import 'components/list';
+@import 'components/logo';  
+>>>>>>> 4edc991ce5af2855609f36885448a6dab0ca837a
 @import 'components/form';
 @import 'components/button';
 @import 'components/riviews-slider';
 @import 'components/teacher-block';
 @import 'components/guarantees-block';
+<<<<<<< HEAD
 @import 'components/learning-problem-list';
+=======
+@import 'components/learning-problem-list';
+@import 'components/container.scss';
+
+
+
+>>>>>>> 4edc991ce5af2855609f36885448a6dab0ca837a
