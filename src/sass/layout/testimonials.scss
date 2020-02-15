@@ -1,0 +1,30 @@
+.image-wrapper {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background-image: url(../images/photos/graduate6@1x.png);
+  background-position: 0 0;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.list-item {
+  &__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    margin: 0 auto;
+
+    &_svg {
+      width: 25px;
+      height: 14px;
+    }
+  }
+}
+
+.read-more {
+  display: inline-block;
+}
