@@ -13,7 +13,11 @@ display: flex;
 margin: 0 auto;
 list-style: none;
 }
-
+.box__icons-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .advantage__icons-item{
     position: relative;
     display: flex;
@@ -28,10 +32,11 @@ list-style: none;
     margin-bottom: rem(17);
 }
 .advantage__box-icons-svg {
+   
     height: rem(50);
-    width: auto;
-    justify-content: center;
-    margin-top: rem(30);
+    width: rem(60);
+    
+    margin: rem(30) auto 0;
 }
 .advantage__title {
     font-size: rem(13);
