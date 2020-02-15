@@ -5,24 +5,7 @@
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
-//   html {
-//     -webkit-box-sizing: border-box;
-//     box-sizing: border-box;
-//   }
-  
-  
-//   *:hover {
-//     -webkit-transition-property: all;
-//     -o-transition-property: all;
-//     transition-property: all;
-//     -webkit-transition-duration: 200ms;
-//     -o-transition-duration: 200ms;
-//     transition-duration: 200ms;
-//     -webkit-transition-timing-function: linear;
-//     -o-transition-timing-function: linear;
-//     transition-timing-function: linear;
-//   }
-  
+
 img {
   display: block;
   max-width: 100%;
@@ -38,12 +21,10 @@ body {
 }
   
 
-
-
 .light-background {
   background-color: $guarantees-bg-color;
   height: 100%;
-  padding-bottom: 40px;
+  padding-bottom: 28px;
 }
 
 .guarantees__title {
@@ -51,7 +32,7 @@ body {
 }
 
 .color__text {
-  color: #ff6b08;
+  color: $orange-txt-color;
 }
 
 .guarantees__list {
@@ -99,5 +80,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   right: 91%;
+  background-image: url(/src/images/icons/fire/Fire.svg);
   background-color: #9d9d44;
 }
