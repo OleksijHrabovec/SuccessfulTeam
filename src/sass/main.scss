@@ -3,4 +3,26 @@
  */
 
 @import 'normalize.scss';
-@import 'base.scss';
+// Utils
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/functions';
+
+// Base style
+@import 'base/reset';
+@import 'base/fonts';
+@import 'base/typography';
+
+// Main page layout
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
+
+// Components
+@import 'components/logo';
+@import 'components/form';
+@import 'components/button';
+@import 'components/riviews-slider';
+@import 'components/teacher-block';
+@import 'components/guarantees-block';
+@import 'components/learning-problem-list';
