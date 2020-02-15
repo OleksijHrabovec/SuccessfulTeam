@@ -7,4 +7,10 @@
     font-size: rem(11);
     line-height: rem(38);
     color: $footer-gray-color;
+    min-width: rem(320);
+    height: 72px;
+    background-color: $black-bg-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
