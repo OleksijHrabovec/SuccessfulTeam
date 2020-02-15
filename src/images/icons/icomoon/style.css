@@ -15,7 +15,19 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 
-.icon-fire {
+.icon-tell {
+  width: 0.7998046875em;
+}
+
+.icon-StudyProgram {
+  width: 0.7998046875em;
+}
+
+.icon-insurance {
+  width: 0.6875em;
+}
+
+.icon-Fire {
   width: 0.7998046875em;
 }
 
