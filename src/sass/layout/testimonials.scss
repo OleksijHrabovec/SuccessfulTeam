@@ -1,18 +1,65 @@
-.image-wrapper {
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  margin: 0 auto;
-  background-image: url(../images/photos/graduate6@1x.png);
-  background-position: 0 0;
-  background-size: cover;
-  margin-bottom: 20px;
+.section-testimonials {
+  background-color: $offwhite-bg-color;
 }
 
-.list-item {
-  &__box {
-    display: flex;
-    flex-direction: column;
+.section-testimonials__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.width280 {
+  width: 280px;
+}
+
+.image-wrapper {
+  border-radius: 50%;
+  width: rem(54);
+  height: rem(54);
+
+  margin: 0 auto;
+  background-position: 0 0;
+  background-size: cover;
+  margin-bottom: rem(20);
+}
+
+.image-wrapper_1 {
+  width: rem(80);
+  height: rem(80);
+  background-image: url(../images/photos/graduate6@1x.png);
+}
+
+.image-wrapper_2 {
+  background-image: url(../images/photos/graduate1@1x.png);
+}
+
+.image-wrapper_3 {
+  background-image: url(../images/photos/graduate2@1x.png);
+}
+
+.image-wrapper_4 {
+  background-image: url(../images/photos/graduate3@1x.jpg);
+}
+
+.image-wrapper_5 {
+  background-image: url(../images/photos/graduate4@1x.png);
+}
+
+.image-wrapper_6 {
+  background-image: url(../images/photos/graduate5@1x.png);
+}
+
+.image-wrapper_7 {
+  background-image: url(../images/photos/graduate6@1x.png);
+}
+
+.image-wrapper_8 {
+  background-image: url(../images/photos/graduate7@1x.png);
+}
+
+.testimonials-block {
+  &__card {
+    padding-top: rem(20);
+    margin: 0 auto;
   }
 
   &__link {
@@ -20,11 +67,42 @@
 
     &_svg {
       width: 25px;
-      height: 14px;
+      height: 25px;
     }
+  }
+
+  &__text {
+    width: rem(260);
+    margin: 0 auto;
+  }
+
+  &__name {
+    @include font-settings(rem(13), rem(30));
+    font-family: 'Montserrat';
+    color: $orange-txt-color;
+    font-weight: bold;
+    text-align: center;
+    width: rem(280);
+  }
+
+  &__info {
+    @include font-settings(rem(11), rem(17));
+    font-family: 'Montserrat';
+    color: $grey-txt-color;
+    text-align: center;
+  }
+
+  &__desc {
+    @include font-settings(rem(11), rem(20));
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    color: $dark-txt-color;
+    padding-bottom: rem(20);
   }
 }
 
 .read-more {
   display: inline-block;
+  color: $orange-txt-color;
 }
