@@ -1,0 +1,6 @@
+.link_orange {
+  @include font-settings(rem(11), rem(30));
+  font-family: 'Montserrat';
+  color: $orange-txt-color;
+  text-decoration: underline;
+}
