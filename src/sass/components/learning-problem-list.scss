@@ -1,0 +1,95 @@
+.sec-program {
+    background-color: $black-bg-color;
+    // position: relative;
+}
+
+.sec-problems {
+    background-color: $black-bg-color;
+    // position: relative;
+}
+
+.reasons {
+    // position: absolute;
+}
+
+
+/*PROGRAM LIST STYLES*/
+
+.semesters {}
+
+.semesters__item {}
+
+.semesters__title {
+    color: $white-txt-color;
+}
+
+.subjects {}
+
+.subjects__item {}
+
+.subjects__title {
+    display: block;
+    color: $orange-txt-color;
+    position: relative;
+}
+
+.subjects__title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: $grad-color-end;
+    left: -35px;
+    top: 9px;
+}
+
+.topics {}
+
+.topics__item {}
+
+.topics__title {
+    color: $grey-txt-color;
+}
+
+
+/*REASONS*/
+
+.reasons {}
+
+
+/*POINTS LIST STYLES*/
+
+.points {
+    display: block;
+    // position: absolute;
+    background-color: $offwhite-bg-color;
+}
+
+.points__item {}
+
+.points__title {
+    color: $orange-txt-color;
+    font-size: 21px;
+    line-height: 1.4;
+    display: block;
+    position: relative;
+}
+
+.points__title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: $grad-color-end;
+    left: -35px;
+    top: 9px;
+}
+
+.points__description {
+    color: $dark-txt-color;
+    font-size: 21px;
+    line-height: 1.4;
+    font-weight: 700;
+}
