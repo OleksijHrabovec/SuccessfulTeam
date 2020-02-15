@@ -28,7 +28,20 @@
 .subjects__item {}
 
 .subjects__title {
+    display: block;
     color: $orange-txt-color;
+    position: relative;
+}
+
+.subjects__title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: $grad-color-end;
+    left: -35px;
+    top: 9px;
 }
 
 .topics {}
@@ -57,11 +70,26 @@
 
 .points__title {
     color: $orange-txt-color;
-    font-size: 13px;
+    font-size: 21px;
+    line-height: 1.4;
+    display: block;
+    position: relative;
+}
+
+.points__title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: $grad-color-end;
+    left: -35px;
+    top: 9px;
 }
 
 .points__description {
     color: $dark-txt-color;
-    font-size: 14px;
+    font-size: 21px;
+    line-height: 1.4;
     font-weight: 700;
 }
