@@ -1,16 +1,56 @@
 .advantage__box {
-    display: block;
+    display: flex;
     margin: 0 auto;
 }
+
 .Advantage__box-icons {
 display: flex;
 margin: 0 auto;
+list-style: none;
 }
 
 .advantage__icons-item{
-    margin-bottom: 17px;
-    background-repeat: no-repeat;
-    background-position: center;
-   height: 268px;
-   width: 280px;
+    position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding:  rem(30) rem(15);
+    margin-bottom: rem(17);
+     height: rem(268);
+     width: rem(230);
+     display: block;
+     background-color: #ffffff;
+
 }
+.advantage__title {
+    font-size: rem(13);
+    line-height: rem(20);
+    color: #000000;
+    font-weight: 500;
+    text-align: center;
+}
+.advantage__text {
+    font-size: rem(11);
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    line-height: rem(20);
+    color: rgb(133,133,133);
+    text-align: center;
+    margin-bottom: rem(30);
+}
+.advantage__icons-item:hover,
+.advantage__icons-item:focus {
+    background-color: rgb(255,107,8);
+    color: #ffffff;
+}
+.advantage__title::after {
+    background-color: rgb(255, 107, 8);
+    content: '';
+    position: absolute;
+    width: rem(25);
+    height: rem(2);
+    left: rem(120);
+    right: rem(0);
+    top: -5.562rem;
+   }
