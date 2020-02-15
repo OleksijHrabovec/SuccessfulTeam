@@ -1,0 +1,67 @@
+.sec-program {
+    background-color: $black-bg-color;
+    // position: relative;
+}
+
+.sec-problems {
+    background-color: $black-bg-color;
+    // position: relative;
+}
+
+.reasons {
+    // position: absolute;
+}
+
+
+/*PROGRAM LIST STYLES*/
+
+.semesters {}
+
+.semesters__item {}
+
+.semesters__title {
+    color: $white-txt-color;
+}
+
+.subjects {}
+
+.subjects__item {}
+
+.subjects__title {
+    color: $orange-txt-color;
+}
+
+.topics {}
+
+.topics__item {}
+
+.topics__title {
+    color: $grey-txt-color;
+}
+
+
+/*REASONS*/
+
+.reasons {}
+
+
+/*POINTS LIST STYLES*/
+
+.points {
+    display: block;
+    // position: absolute;
+    background-color: $offwhite-bg-color;
+}
+
+.points__item {}
+
+.points__title {
+    color: $orange-txt-color;
+    font-size: 13px;
+}
+
+.points__description {
+    color: $dark-txt-color;
+    font-size: 14px;
+    font-weight: 700;
+}
