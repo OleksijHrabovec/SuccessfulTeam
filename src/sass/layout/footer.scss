@@ -1,0 +1,31 @@
+.footer {
+    font-size: rem(18);
+    line-height: rem(38);
+    max-width: rem(320);
+}
+
+.footer__number {
+    text-align: center;
+}
+
+.footer__link__telephone {
+    width: 20px;
+    height: 20px;
+}  
+
+.footer__link__instagram {
+    width: 37px;
+    height: 37px;
+}
+
+.copyright {
+    font-size: rem(11);
+    line-height: rem(38);
+    color: $footer-gray-color;
+    height: 72px;
+    background-color: $black-bg-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}

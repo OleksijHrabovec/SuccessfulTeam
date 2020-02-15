@@ -1,0 +1,57 @@
+.form {
+    background-image: url(../images/photos/form-img@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 80%;
+    color: $white-txt-color;
+    max-width: rem(320);
+    margin: auto;
+    text-align: center;
+    height: rem(538);
+}
+
+.form__heading {
+    font-size: rem(14);
+    line-height: rem(24);
+    font-weight: 700;
+    max-width: rem(210);
+    margin: 0 auto rem(26);
+    padding-top: rem(46);
+}
+
+.form__text {
+    font-size: rem(11);
+    line-height: rem(20);
+    font-weight: 500;
+    max-width: rem(250);
+    margin: 0 auto rem(26);
+}
+
+.form__input {
+    display: flex;
+    justify-content: center;
+    max-width: rem(280);
+    height: rem(50);    
+    border: rem(1) solid $white-bg-color;
+    background-color: transparent;
+    padding-left: rem(20);
+    margin: 0 auto rem(20);
+}
+
+.input__phone {
+    margin-bottom: rem(0);
+}
+
+.text_orange {
+    color: $orange-txt-color;
+}
+
+.form__input::placeholder {
+    color: $white-txt-color;
+    font-size: rem(13);
+    font-weight: 600;
+}
+
+.btn_form {
+    margin: rem(56) auto rem(58);
+}
