@@ -2,9 +2,49 @@
   background-color: $offwhite-bg-color;
 }
 
-.section-testimonials__list {
+// .section-testimonials__list-item:nth-child(-n + 3) {
+//   display: none;
+// }
+
+.hidden {
+  display: none;
+}
+
+.slider-btn {
+  position: relative;
+  margin: auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.slider-ctrl {
+  position: absolute;
+  display: inline-block;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  // background-color: #1abc9c;
+  // width: 104px;
+  // height: 104px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-ctrl-prev {
+  position: absolute;
+  left: 0;
+  background-image: url(../images/icons/icon-prev.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-ctrl-next {
+  position: absolute;
+  right: 0;
+  background-image: url(../img/icons/icon-next.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .width280 {
