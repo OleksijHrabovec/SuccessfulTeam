@@ -32,7 +32,14 @@
 .main-offer__item:not(:last-child) {
   margin-bottom: 30px;
 }
+.main-offer__svg-wrapper {
+  display: block;
+  margin-right: 15px;
+  fill:$orange-txt-color ;
+}
 .main-offer__svg {
-  border: 2px solid $orange-txt-color;
 
+  border: 2px solid $orange-txt-color;
+  width:58px;
+  height:58px;
 }
