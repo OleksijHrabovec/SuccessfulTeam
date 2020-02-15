@@ -1,0 +1,140 @@
+.sec-program {
+    background-color: $black-bg-color;
+    padding-top: 52px;
+    // position: relative;
+}
+
+.sec-problems {
+    background-color: $black-bg-color;
+    // position: relative;
+}
+
+.reasons {
+    // position: absolute;
+}
+
+
+/*PROGRAM LIST STYLES*/
+
+.semesters {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+}
+
+.semesters::before {
+    content: '';
+    position: absolute;
+    background-color: #546264;
+    width: 2px;
+    height: 1260px;
+    left: 0;
+    top: 13px;
+}
+
+.semesters__item {
+    display: block;
+    position: relative;
+}
+
+.semesters__item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: $grad-color-end;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    left: -29px;
+    top: 13px;
+}
+
+.semesters__title {
+    color: $white-txt-color;
+    line-height: 1;
+    font-size: 29px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+.subjects {}
+
+.subjects__item {}
+
+.subjects__title {
+    display: block;
+    color: $orange-txt-color;
+    position: relative;
+    font-size: 21px;
+    line-height: 1.4;
+    padding-left: 35px;
+    margin-bottom: 22px;
+}
+
+.subjects__title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: $grad-color-end;
+    left: 0px;
+    top: 13px;
+}
+
+.topics {}
+
+.topics__item {}
+
+.topics__title {
+    color: $grey-txt-color;
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+
+/*REASONS*/
+
+.reasons {}
+
+
+/*POINTS LIST STYLES*/
+
+.points {
+    display: block;
+    // position: absolute;
+    background-color: $offwhite-bg-color;
+    padding-top: 22px;
+}
+
+.points__item {}
+
+.points__title {
+    color: $orange-txt-color;
+    font-size: 21px;
+    line-height: 1.4;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 16px;
+}
+
+.points__title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: $grad-color-end;
+    left: 0px;
+    top: 13px;
+}
+
+.points__description {
+    color: $dark-txt-color;
+    font-size: 21px;
+    line-height: 1.4;
+    font-weight: 700;
+    margin-bottom: 22px;
+}

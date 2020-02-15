@@ -1,7 +1,12 @@
 .section__title {
-  @include font-settings(rem(20), rem(30));
-  font-family: 'Montserrat';
-  color: $black-bg-color;
-  font-weight: bold;
-  text-align: center;
+    @include font-settings(rem(20), rem(30));
+    font-family: 'Montserrat';
+    color: $dark-txt-color;
+    font-weight: bold;
+}
+
+.section__title_white {
+    color: $white-txt-color;
+    font-size: 20px;
+    margin-bottom: 42px;
 }
