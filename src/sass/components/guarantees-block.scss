@@ -45,6 +45,7 @@ body {
 
 .light-background {
   background-color: #d1d1d0;
+  height: 400px;
 }
 
 .section__title {
@@ -85,7 +86,10 @@ body {
 
 .guarantees__svg {
   position: absolute;
-  width: 13px;
+  width: 18px;
   height: 18px;
+  fill: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: 107%;
 }
-
