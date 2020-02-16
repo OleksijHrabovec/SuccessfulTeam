@@ -1,6 +1,6 @@
 /* montserrat-regular - latin */
 @font-face {
-    font-family: 'Montserrat';
+    $main-font: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/montserrat-v14-latin-regular.eot'); /* IE9 Compat Modes */
@@ -13,7 +13,7 @@
   }
   /* montserrat-500 - latin */
   @font-face {
-    font-family: 'Montserrat';
+    $main-font: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     src: url('../fonts/montserrat-v14-latin-500.eot'); /* IE9 Compat Modes */
@@ -26,7 +26,7 @@
   }
   /* montserrat-600 - latin */
   @font-face {
-    font-family: 'Montserrat';
+    $main-font: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     src: url('../fonts/montserrat-v14-latin-600.eot'); /* IE9 Compat Modes */
@@ -39,7 +39,7 @@
   }
   /* montserrat-700 - latin */
   @font-face {
-    font-family: 'Montserrat';
+    $main-font: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     src: url('../fonts/montserrat-v14-latin-700.eot'); /* IE9 Compat Modes */
@@ -52,7 +52,7 @@
   }
   /* montserrat-800 - latin */
   @font-face {
-    font-family: 'Montserrat';
+    $main-font: 'Montserrat';
     font-style: normal;
     font-weight: 800;
     src: url('../fonts/montserrat-v14-latin-800.eot'); /* IE9 Compat Modes */
@@ -65,7 +65,7 @@
   }
   /* montserrat-900 - latin */
   @font-face {
-    font-family: 'Montserrat';
+    $main-font: 'Montserrat';
     font-style: normal;
     font-weight: 900;
     src: url('../fonts/montserrat-v14-latin-900.eot'); /* IE9 Compat Modes */

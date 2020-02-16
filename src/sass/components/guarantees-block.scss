@@ -16,7 +16,7 @@ img {
 
 
 body {
-  font-family: "Montserrat", "Arial", sans-serif;
+  $main-font: "Montserrat", "Arial", sans-serif;
   background-color: #ffffff;
   font-size: 15px;
   margin: 0;
@@ -25,7 +25,7 @@ body {
   
 
 .light-background {
-  background-color: $guarantees-bg-color;
+  background-color: $grey-color;
   height: 100%;
   padding-bottom: 28px;
 }
@@ -37,7 +37,7 @@ body {
 
 
 .color__text {
-  color: $orange-txt-color;
+  color: $orange-color;
 }
 
 

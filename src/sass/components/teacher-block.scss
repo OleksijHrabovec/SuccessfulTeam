@@ -19,30 +19,30 @@
     position: absolute;
     content: '';
     display: block;
-    background-color: $orange-txt-color;
+    background-color: $orange-color;
     width: rem(25);
     height: rem(2);
   }
 
   &__name {
     @include font-settings(rem(16), rem(30));
-    font-family: 'Montserrat';
-    color: $black-bg-color;
+    $main-font: 'Montserrat';
+    color: $black-color;
     font-weight: bold;
-    border-bottom: rem(1) solid $grey-txt-color;
+    border-bottom: rem(1) solid $grey-color;
   }
 
   &__list-text {
     @include font-settings(rem(13), rem(20));
-    font-family: 'Montserrat';
-    color: $black-bg-color;
+    $main-font: 'Montserrat';
+    color: $black-color;
     font-weight: bold;
   }
 
   &__desc {
     @include font-settings(rem(11), rem(20));
-    font-family: 'Myriad Pro';
-    color: $grey-txt-color;
+    $main-font: 'Myriad Pro';
+    color: $grey-color;
     padding: rem(20), rem(16), 0;
   }
 }
@@ -62,6 +62,6 @@
     width: 30px;
     height: 30px;
     background-image: url(../images/icons/check/Check.svg);
-    // fill: $orange-txt-color;
+    // fill: $orange-color;
   }
 }
