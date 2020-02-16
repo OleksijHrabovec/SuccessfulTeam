@@ -1,5 +1,5 @@
 .form__container {
-    width: rem(320);
+    // width: rem(320);
     margin: 0 auto;
     background-image: url(../images/photos/form-img@1x.jpg);
     background-repeat: no-repeat;
@@ -82,21 +82,27 @@
 
 // MEDIA
 
-@media (min-width: rem(768)) {
-
+@include for-size (tablet-portrait-up) {
+    
     .form__container {
-        width: rem(768);
+        // width: rem(768);
     }
 
     .form__heading {
         max-width: rem(550);
+        font-size: rem(22);
+        line-height: rem(38);
     }
 
     .form__text {
-        max-width: rem(462);
+        max-width: rem(410);
+        font-size: rem(15);
+        line-height: rem(20);
     }
 
-    .form-input {
-        max-width: rem(380);
+    .form__input {
+        width: rem(376);
+        padding-left: rem(24);
     }
+    
 }
