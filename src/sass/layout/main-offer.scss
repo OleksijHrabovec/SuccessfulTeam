@@ -1,4 +1,5 @@
 .main-offer {
+  font-family: $main-font ;
   padding: 60px 0 70px;
 }
 .main-offer__title {
@@ -47,7 +48,7 @@
 .main-offer__svg-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 10px;
   margin-right: 15px;
   fill:$orange-color ;
 }
