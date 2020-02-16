@@ -1,5 +1,5 @@
 .section-testimonials {
-  background-color: $offwhite-bg-color;
+  background-color: $white-color;
 }
 
 // .section-testimonials__list-item:nth-child(-n + 3) {
@@ -24,9 +24,9 @@
   border: 0;
   margin: 0;
   padding: 0;
-  // background-color: #1abc9c;
-  // width: 104px;
-  // height: 104px;
+  background-color: $orange-color;
+  width: 104px;
+  height: 104px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -124,8 +124,8 @@
 
   &__name {
     @include font-settings(rem(13), rem(30));
-    font-family: 'Montserrat';
-    color: $orange-txt-color;
+    font-family: $main-font;
+    color: $orange-color;
     font-weight: bold;
     text-align: center;
     width: rem(280);
@@ -133,8 +133,8 @@
 
   &__info {
     @include font-settings(rem(11), rem(17));
-    font-family: 'Montserrat';
-    color: $grey-txt-color;
+    font-family: $main-font;
+    color: $grey-color;
     text-align: center;
   }
 
@@ -142,13 +142,13 @@
     @include font-settings(rem(11), rem(20));
     text-align: center;
     font-weight: bold;
-    font-family: 'Montserrat';
-    color: $dark-txt-color;
+    font-family: $main-font;
+    color: $min-dark-color;
     padding-bottom: rem(20);
   }
 }
 
 .read-more {
   display: inline-block;
-  color: $orange-txt-color;
+  color: $orange-color;
 }

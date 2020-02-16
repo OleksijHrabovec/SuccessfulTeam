@@ -72,6 +72,11 @@
   color: white;
 }
 
+.advantage__icons-item:hover .advantage__title,
+.advantage__icons-item:hover .advantage__text {
+  color: white;
+}
+
 .advantage__icons-item:hover .advantage__title::after {
   background-color: white;
 }
