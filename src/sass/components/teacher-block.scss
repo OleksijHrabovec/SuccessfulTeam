@@ -1,11 +1,39 @@
 .section-teacher {
   padding-bottom: rem(55);
   background-color: #fff;
+  padding-top: rem(250);
+
+  @include for-size(tablet-portrait-up) {
+    padding-top: rem(320);
+  }
+  @include for-size(desktop-up) {
+    padding-top: rem(190);
+  }
 }
 
 .section-teacher__title {
   padding-top: rem(50);
   margin-bottom: rem(25);
+
+  @include for-size(tablet-portrait-up) {
+    @include font-settings(rem(26), rem(63));
+  }
+
+  @include for-size(desktop-up) {
+    @include font-settings(rem(42), rem(63));
+  }
+}
+
+.section-teacher__wrapper {
+  @include for-size(tablet-portrait-up) {
+    display: flex;
+    width: rem(690);
+    justify-content: space-between;
+  }
+
+  @include for-size(desktop-up) {
+    width: rem(1210);
+  }
 }
 
 .img-wrapper {
@@ -14,6 +42,27 @@
   background-position: 0 0;
   background-size: cover;
   margin-bottom: rem(25);
+
+  @include for-size(tablet-portrait-up) {
+    width: rem(250);
+    height: rem(325);
+  }
+
+  @include for-size(desktop-up) {
+    width: rem(496);
+    height: rem(647);
+  }
+}
+
+.text-wrapper {
+  @include for-size(tablet-portrait-up) {
+    width: rem(415);
+    padding-left: rem(15);
+  }
+
+  @include for-size(desktop-up) {
+    width: rem(629);
+  }
 }
 
 .section-teacher {
@@ -38,6 +87,14 @@
     font-weight: bold;
     border-bottom: rem(1) solid $min-grey-color;
     margin-bottom: rem(25);
+
+    @include for-size(tablet-portrait-up) {
+      @include font-settings(rem(20), rem(30));
+    }
+
+    @include for-size(desktop-up) {
+      @include font-settings(rem(42), rem(63));
+    }
   }
 
   &__list-text {
@@ -53,6 +110,10 @@
     color: $grey-color;
     padding: 0, rem(16);
     padding-top: rem(20);
+
+    @include for-size(desktop-up) {
+      @include font-settings(rem(16), rem(20));
+    }
   }
 }
 
@@ -73,4 +134,14 @@
     height: 30px;
     background-image: url(../images/icons/check/icon-check.png);
   }
+}
+
+.wrapper-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-teacher__desc_1 {
+  padding-bottom: rem(160);
 }
