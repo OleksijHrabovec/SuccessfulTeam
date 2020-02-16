@@ -1,32 +1,41 @@
 .advantage {
-    margin: 0 auto;
+    padding-top: rem(200);
+    padding-bottom: rem(54);
 }
 .advantage_list {
     display: flex;
     justify-content: center;
+    padding-bottom: rem(42);
 }
 .advantage__box {
-  margin: auto;
-  display: flex;
-  justify-content: center;
+  
 }
-.Advantage__box-icons {
+.advantage__box-icons-list {
   display: flex;
   margin: 0 auto;
   list-style: none;
-}
+  flex-wrap: wrap;
+        @include for-size (tablet-portrait-up) {
+            justify-content: space-around;
+        }
+        @include for-size (desktop-up) {
+            justify-content: space-between;
+        }
+    }
 .box__icons-svg {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: auto;
 }
 .advantage__icons-item{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-     padding:  rem(10) ;
-    //  box-shadow: rem(4) 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
+     padding:  rem(20) ;
+     box-shadow: rem(4) 6.928px 26.68px 6.32px rgba(29, 29, 27, 0.11);
      height: rem(268);
      width: rem(280);
      display: block;
@@ -38,15 +47,15 @@
     height: rem(50);
     width: rem(60);
     
-    margin: rem(30) auto 0;
+ 
 }
 .advantage__title {
     font-size: rem(13);
     line-height: rem(20);
     color: $black-color;
-    font-weight: 500;
+    font-weight: 700;
     text-align: center;
-    margin-bottom: rem(45);
+    margin-bottom: rem(20);
 }
 .advantage__text {
     font-size: rem(11);
@@ -56,7 +65,7 @@
     line-height: rem(20);
     color:$grey-color;
     text-align: center;
-   padding: rem(0) rem(25);
+   padding: rem(0) rem(15);
 }
 .advantage__icons-item:hover,
 .advantage__icons-item:focus {
@@ -66,12 +75,10 @@
 .advantage__title::after {
     background-color: $orange-color;
     content: '';
-    position: absolute;
+    
     width: rem(25);
     height: rem(2);
-    left: rem(140);
-    right: rem(0);
-    top: 10.438rem;
+    margin: rem(20) auto 0;
     display: block;
    }
 
@@ -93,5 +100,5 @@
    }
 
 .advantage__icons-item:hover .advantage__title::after {
-  background-color: white;
+  background-color: $white-color;
 }
