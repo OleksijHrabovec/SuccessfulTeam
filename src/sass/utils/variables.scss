@@ -1,20 +1,14 @@
 /*TEXT COLORS*/
 
-$orange-txt-color: #ff6b08;
-$logo-black-color: #000000;
-$nav-grey-color: #b9b9b9;
-$dark-txt-color: #18191d;
-$grey-txt-color: #858585;
-$lightgray-txt-color: #b9b9b9;
-$white-txt-color: #ffffff;
-$footer-gray-color: #747778;
-
-/*BACKGROUND COLORS*/
-
-$black-bg-color: #111517;
-$guarantees-bg-color: #f1f1f1;
-$offwhite-bg-color: #fefefe;
+$orange-color: #ff6b08;
+$black-color: #000000;
+$min-grey-color: #b9b9b9;
+$min-dark-color: #18191d;
+$grey-color: #858585;
+$white-color: #ffffff;
 $grad-color-start: #585273;
-$grad-color-middle: #ac5f3e;
-$grad-color-end: #ff6b08;
-$white-bg-color: #ffffff;
+$offwhite-bg-color: #fefefe;
+
+// FONTS
+
+$main-font: 'Montserrat', sans-serif;

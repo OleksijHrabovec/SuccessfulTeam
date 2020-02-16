@@ -1,5 +1,11 @@
 .section-teacher {
   padding-bottom: rem(55);
+  background-color: #fff;
+}
+
+.section-teacher__title {
+  padding-top: rem(50);
+  margin-bottom: rem(25);
 }
 
 .img-wrapper {
@@ -7,49 +13,53 @@
   background-image: url(../images/photos/teacher@1x.jpg);
   background-position: 0 0;
   background-size: cover;
+  margin-bottom: rem(25);
 }
 
 .section-teacher {
   &__list {
     position: relative;
-    margin-bottom: rem(20);
+    // margin-bottom: rem(20);
   }
 
   &__list::after {
     position: absolute;
     content: '';
     display: block;
-    background-color: $orange-txt-color;
+    background-color: $orange-color;
     width: rem(25);
     height: rem(2);
   }
 
   &__name {
     @include font-settings(rem(16), rem(30));
-    font-family: 'Montserrat';
-    color: $black-bg-color;
+    $main-font: $main-font;
+    color: $black-color;
     font-weight: bold;
-    border-bottom: rem(1) solid $grey-txt-color;
+    border-bottom: rem(1) solid $min-grey-color;
+    margin-bottom: rem(25);
   }
 
   &__list-text {
     @include font-settings(rem(13), rem(20));
-    font-family: 'Montserrat';
-    color: $black-bg-color;
+    font-family: $main-font;
+    color: $black-color;
     font-weight: bold;
   }
 
   &__desc {
     @include font-settings(rem(11), rem(20));
-    font-family: 'Myriad Pro';
-    color: $grey-txt-color;
-    padding: rem(20), rem(16), 0;
+    font-family: $main-font;
+    color: $grey-color;
+    padding: 0, rem(16);
+    padding-top: rem(20);
   }
 }
 
 .section-teacher__list-item {
   padding-left: rem(35);
   position: relative;
+  margin-bottom: rem(25);
 
   &::before {
     content: '';
@@ -61,7 +71,6 @@
     left: 0;
     width: 30px;
     height: 30px;
-    background-image: url(../images/icons/check/Check.svg);
-    // fill: $orange-txt-color;
+    background-image: url(../images/icons/check/icon-check.png);
   }
 }

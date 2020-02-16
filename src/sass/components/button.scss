@@ -1,7 +1,7 @@
 .btn {
     width: rem(250);
     height: rem(48);
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    $main-font: Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     border: none;
     font-size: rem(11);
@@ -12,6 +12,6 @@
 }
 
 .btn_orange {
-    background-color: $grad-color-end;
-    color: $white-txt-color;
+    background-color: $orange-color;
+    color: $white-color;
 }

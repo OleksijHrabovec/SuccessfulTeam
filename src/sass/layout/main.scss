@@ -10,13 +10,13 @@
   line-height: 22px;
 }
 .main-offer__text_grey {
-  color: $grey-txt-color;
+  color: $grey-color;
 }
 .main-offer__text_black {
-  color: $dark-txt-color;
+  color: $black-color;
 }
 .main-offer__text_orange {
-  color: $orange-txt-color;
+  color: $orange-color;
 }
 .main-offer__text_bold {
   font-weight: 700;
@@ -46,10 +46,10 @@
 .main-offer__svg-wrapper {
   display: block;
   margin-right: 15px;
-  fill:$orange-txt-color ;
+  fill:$orange-color ;
 }
 .main-offer__svg {
-  border: 2px solid $orange-txt-color;
+  border: 2px solid $orange-color;
   width:58px;
   height:58px;
 }
