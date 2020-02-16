@@ -1,3 +1,82 @@
 .header {
+  padding: 24px 0 0;
+  
+}
+.position-relative {
+  position: relative;
+  z-index: 10;
+
+}
+.overlay {
+  z-index: 0;
+  display: none;
+  padding-top: 20px;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.9);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -24px;
+  margin: auto;
+}
+.header_flex {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mb-57 {
+  margin-bottom: 57px;
+
+}
+.burger {
+  display: flex;
+  height: 12px;
+  width: 25px;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.burger__item {
+  height: 2px;
+  width: 24px;
+  background-color: $min-dark-color ;
+}
+.nav__list{
+  padding: 0 20px 0 33px ;
+  margin-bottom: 45px;
+}
+.nav__item {
+  font-size: 20px;
+  line-height: 37px;
+  font-weight: 700;
+  font-family: $main-font;
+  color: $white-color;
+  
+  &:hover {
+    color: $orange-color;
+
+  }
+}
+.header__btn {
+  background-color: rgba(0,0,0,0.0);
+  border: 2px solid $orange-color;
+  color: $orange-color;
+}
+.overlay__svg {
+  width: rem(26);
+  height: rem(26);
+
+}
+.overlay__svg use {
+  width: rem(26);
+  height: rem(26);
+
+}
+.close {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+.z-index {
+  z-index: 10;
 }
