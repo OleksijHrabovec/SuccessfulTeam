@@ -1,6 +1,6 @@
 
 .light-background {
-  background-color: $guarantees-bg-color;
+  background-color: $grey-color;
   height: 100%;
   padding-bottom: 28px;
 }
@@ -12,17 +12,19 @@
 
 
 .color__text {
-  color: $orange-txt-color;
+  color: $orange-color;
 }
 
 
 .guarantees__list {
+  font-weight: 500;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  font-size: 11px;
 }
 
 
@@ -57,11 +59,11 @@
   clear: both;
   position: absolute;
   width: 20px;
-  height: 20px;
+  height: 28px;
   fill: #ffffff;
-  top: 28px;
+  top: 22px;
   background-position: center;
   background-repeat: no-repeat;
   right: 91%;
-  background-image: url(../images/icons/fire/Fire.svg);
+  background-image: url(../images/icons/fire/fire.png);
 }
