@@ -1,7 +1,6 @@
 /*
  * Все паршалы импортировать в этот файл
  */
-
 // Utils
 @import 'utils/variables';
 @import 'utils/mixins';
@@ -29,4 +28,6 @@
 @import 'components/teacher-block';
 @import 'components/guarantees-block';
 @import 'components/learning-problem-list';
-@import 'components/advantages';    
+@import 'components/advantages';
+
+@import 'base';
