@@ -1,6 +1,15 @@
+%m-reset {
+    margin: 0;
+}
+
+%p-reset {
+    padding: 0;
+}
+
 .sec-program {
     background-color: $black-bg-color;
     padding-top: 52px;
+    @extend %m-reset;
     // position: relative;
 }
 
@@ -79,6 +88,7 @@
     font-weight: 700;
     margin-bottom: 28px;
     font-family: $main-font;
+    @extend %m-reset;
 }
 
 .subjects {}
@@ -94,6 +104,7 @@
     padding-left: 35px;
     margin-bottom: 22px;
     font-family: $main-font;
+    @extend %m-reset;
 }
 
 .subjects__title::before {
@@ -121,6 +132,7 @@
     line-height: 1.6;
     margin-bottom: 12px;
     font-family: $main-font;
+    @extend %m-reset;
 }
 
 
@@ -149,6 +161,7 @@
     padding-left: 35px;
     margin-bottom: 16px;
     font-family: $main-font;
+    @extend %m-reset;
 }
 
 .points__title::before {
@@ -169,4 +182,5 @@
     font-weight: 700;
     margin-bottom: 22px;
     font-family: $main-font;
+    @extend %m-reset;
 }
