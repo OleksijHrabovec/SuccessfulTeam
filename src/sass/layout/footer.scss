@@ -4,7 +4,7 @@
     line-height: rem(38);
     max-width: rem(320);
     max-height: rem(254);
-    font-family: $main-font;
+    $main-font: $main-font;
 }
 
 .footer__number {
@@ -27,9 +27,9 @@
 .copyright {
     font-size: rem(11);
     line-height: rem(38);
-    color: $footer-gray-color;
+    color: $grey-color;
     height: 72px;
-    background-color: $black-bg-color;
+    background-color: $black-color;
     display: flex;
     justify-content: center;
     align-items: center;

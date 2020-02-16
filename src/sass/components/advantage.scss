@@ -44,7 +44,7 @@ list-style: none;
 .advantage__text {
     font-size: rem(11);
     margin: 0 auto;
-    font-family: "Montserrat", sans-serif;
+    $main-font: "Montserrat", sans-serif;
     font-weight: 300;
     line-height: rem(20);
     color: rgb(133,133,133);

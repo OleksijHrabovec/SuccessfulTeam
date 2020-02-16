@@ -3,7 +3,7 @@
 <svg xmlns="http://www.w3.org/2000/svg">
 <defs >
 <font id="Montserrat" horiz-adv-x="682" ><font-face
-    font-family="Montserrat Black"
+    $main-font="Montserrat Black"
     units-per-em="1000"
     panose-1="0 0 10 0 0 0 0 0 0 0"
     ascent="968"
