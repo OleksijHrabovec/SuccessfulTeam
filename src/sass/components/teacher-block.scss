@@ -1,52 +1,120 @@
 .section-teacher {
-    padding-bottom: rem(55);
-    background-color: #fff;
+  padding-bottom: rem(55);
+  background-color: #fff;
+  padding-top: rem(250);
+
+  @include for-size(tablet-portrait-up) {
+    padding-top: rem(320);
+  }
+  @include for-size(desktop-up) {
+    padding-top: rem(190);
+  }
 }
 
 .section-teacher__title {
   padding-top: rem(50);
   margin-bottom: rem(25);
+
+  @include for-size(tablet-portrait-up) {
+    @include font-settings(rem(26), rem(63));
+  }
+
+  @include for-size(desktop-up) {
+    @include font-settings(rem(42), rem(63));
+  }
+}
+
+.section-teacher__wrapper {
+  @include for-size(tablet-portrait-up) {
+    display: flex;
+    width: rem(690);
+    justify-content: space-between;
+  }
+
+  @include for-size(desktop-up) {
+    width: rem(1210);
+  }
 }
 
 .img-wrapper {
-    height: rem(214);
-    background-image: url(../images/photos/teacher@1x.jpg);
-    background-position: 0 0;
-    background-size: cover;
+  height: rem(214);
+  background-image: url(../images/photos/teacher@1x.jpg);
+  background-position: 0 0;
+  background-size: cover;
+  margin-bottom: rem(25);
+
+  @include for-size(tablet-portrait-up) {
+    width: rem(250);
+    height: rem(325);
+  }
+
+  @include for-size(desktop-up) {
+    width: rem(496);
+    height: rem(647);
+  }
+}
+
+.text-wrapper {
+  @include for-size(tablet-portrait-up) {
+    width: rem(415);
+    padding-left: rem(15);
+  }
+
+  @include for-size(desktop-up) {
+    width: rem(629);
+  }
 }
 
 .section-teacher {
-    &__list {
-        position: relative;
-        margin-bottom: rem(20);
+  &__list {
+    position: relative;
+    // margin-bottom: rem(20);
+  }
+
+  &__list::after {
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: $orange-color;
+    width: rem(25);
+    height: rem(2);
+  }
+
+  &__name {
+    @include font-settings(rem(16), rem(30));
+    $main-font: $main-font;
+    color: $black-color;
+    font-weight: bold;
+    border-bottom: rem(1) solid $min-grey-color;
+    margin-bottom: rem(25);
+
+    @include for-size(tablet-portrait-up) {
+      @include font-settings(rem(20), rem(30));
     }
-    &__list::after {
-        position: absolute;
-        content: '';
-        display: block;
-        background-color: $orange-color;
-        width: rem(25);
-        height: rem(2);
+
+    @include for-size(desktop-up) {
+      @include font-settings(rem(42), rem(63));
     }
-    &__name {
-        @include font-settings(rem(16), rem(30));
-        $main-font: 'Montserrat';
-        color: $black-color;
-        font-weight: bold;
-        border-bottom: rem(1) solid $grey-color;
+  }
+
+  &__list-text {
+    @include font-settings(rem(13), rem(20));
+    font-family: $main-font;
+    color: $black-color;
+    font-weight: bold;
+  }
+
+  &__desc {
+    @include font-settings(rem(11), rem(20));
+    font-family: $main-font;
+    color: $grey-color;
+    padding: 0, rem(16);
+    padding-top: rem(20);
+
+    @include for-size(desktop-up) {
+      @include font-settings(rem(16), rem(20));
     }
-    &__list-text {
-        @include font-settings(rem(13), rem(20));
-        $main-font: 'Montserrat';
-        color: $black-color;
-        font-weight: bold;
-    }
-    &__desc {
-        @include font-settings(rem(11), rem(20));
-        $main-font: 'Myriad Pro';
-        color: $grey-color;
-        padding: rem(20), rem(16), 0;
-    }
+  }
 }
 
 .section-teacher__list-item {
@@ -65,4 +133,14 @@
         background-image: url(../images/icons/check/Check.svg);
         // fill: $orange-color;
     }
+}
+
+.wrapper-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-teacher__desc_1 {
+  padding-bottom: rem(160);
 }
