@@ -68,10 +68,12 @@
   background-image: url(../images/icons/fire/fire.png);
 }
 
-@media (min-width: rem(768)) {
-  .guarantees__list {
+@include for-size (tablet-portrait-up) {
+  .guarantees__list{
     display: block;
-}
+    margin: 0 auto;
+  }
+
   .guarantees__item::after {
     content: "";
     display: table;
@@ -79,7 +81,6 @@
     position: absolute;
     width: 20px;
     height: 28px;
-    fill: #ffffff;
     top: 22px;
     background-position: center;
     background-repeat: no-repeat;
@@ -94,7 +95,42 @@
     border-left: 1px solid;
     border-left-style: dotted;
     height: 110%;
-    color: #9d9d95;
+    color: $min-grey-color;
     right: 98%;
+  }
+  .center {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+@include for-size (desktop-up) {
+   .guarantees__item::after {
+    content: "";
+    display: table;
+    clear: both;
+    position: absolute;
+    width: 20px;
+    height: 28px;
+    top: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: -10px;
+    background-image: url(../images/icons/fire/fire.png);
+  }
+  .guarantees__item:not(:last-child)::before {
+    content: "";
+    display: table;
+    clear: both;
+    position: absolute;
+    border-left: 1px solid;
+    border-left-style: dotted;
+    height: 110%;
+    color: $min-grey-color;
+    right: 100%;
+  }
+  .center {
+    display: flex;
+    margin: 0 auto;
   }
 }
