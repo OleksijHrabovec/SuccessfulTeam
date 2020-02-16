@@ -3,9 +3,20 @@
     padding-bottom: rem(54);
 }
 .advantage_list {
+    font-size: rem(20);
     display: flex;
     justify-content: center;
     padding-bottom: rem(42);
+     @include for-size (tablet-portrait-up){
+              font-size: rem(26);
+              font-family: $main-font;
+    }
+      @include for-size (desktop-up){
+              font-size: rem(42);
+              font-weight: 800;
+             justify-content: flex-start;
+             font-family: $main-font;
+    }
 }
 
 .advantage__box-icons-list {
@@ -26,6 +37,9 @@
         .advantage__title{
             font-size: rem(18);
             line-height: rem(29);
+                @include for-size (desktop-up){
+                   font-size: rem(18);
+            }
         }
         .advantage__text{
             font-size: rem(15);
