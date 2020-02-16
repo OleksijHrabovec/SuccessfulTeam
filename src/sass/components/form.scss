@@ -1,8 +1,13 @@
-.form {
+.form__container {
+    width: rem(320);
+    margin: 0 auto;
     background-image: url(../images/photos/form-img@1x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 80%;
+}
+
+.form {  
     color: $white-color;
     max-width: rem(280);
     margin: auto;
@@ -15,7 +20,7 @@
     font-size: rem(14);
     line-height: rem(24);
     font-weight: 700;
-    max-width: rem(210);
+    max-width: rem(230);
     margin: 0 auto rem(26);
     padding-top: rem(46);
 }
@@ -25,25 +30,30 @@
     font-size: rem(11);
     line-height: rem(20);
     font-weight: 500;
-    max-width: rem(250);
+    max-width: rem(232);
     margin: 0 auto rem(26);
 }
 
 .form__input {
     display: flex;
+    font-family: 'Myriad Pro', sans-serif;
     justify-content: center;
-    width: rem(280);
+    width: rem(260);
     height: rem(50);    
-    border: rem(1) solid #111517;
+    border: rem(1) solid $white-color;
     background-color: transparent;
     padding-left: rem(20);
     margin: 0 auto rem(20);
+    outline: $white-color;
+    font-size: rem(13);
 }
 
 .form__input:focus {
-    font-family: $main-font;
+    font-family: 'Myriad Pro', sans-serif;
     color: $white-color;
     outline: $white-color;
+    font-size: rem(13);
+    font-weight: 600;
 }
 
 .input__phone {
@@ -55,11 +65,38 @@
 }
 
 .form__input::placeholder {
+    font-family: 'Myriad Pro', sans-serif;
     color: $white-color;
     font-size: rem(13);
     font-weight: 600;
 }
 
+.form__input:not(:focus) {
+    color: $white-color;   
+    font-family: 'Myriad Pro', sans-serif;
+}
+
 .btn_form {
     margin: rem(56) auto rem(58);
+}
+
+// MEDIA
+
+@media (min-width: rem(768)) {
+
+    .form__container {
+        width: rem(768);
+    }
+
+    .form__heading {
+        max-width: rem(550);
+    }
+
+    .form__text {
+        max-width: rem(462);
+    }
+
+    .form-input {
+        max-width: rem(380);
+    }
 }
