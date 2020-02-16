@@ -10,13 +10,13 @@
   line-height: 22px;
 }
 .main-offer__text_grey {
-  color: $grey-txt-color;
+  color: $min-grey-color;
 }
 .main-offer__text_black {
-  color: $dark-txt-color;
+  color: $min-dark-color;
 }
 .main-offer__text_orange {
-  color: $orange-txt-color;
+  color: $orange-color;
 }
 .main-offer__text_bold {
   font-weight: 700;
@@ -49,10 +49,10 @@
   justify-content: center;
   align-items: center;
   margin-right: 15px;
-  fill:$orange-txt-color ;
+  fill:$orange-color ;
 }
 .main-offer__svg {
-  border: 2px solid $orange-txt-color;
+  border: 2px solid $orange-color;
   width:58px;
   height:58px;
 }
@@ -63,7 +63,7 @@
 .main-offer__item-text::before {
   content: "";
   position: absolute;
-  background-color: $white-txt-color;
+  background-color: $white-color;
   display: block;
   height: 36px;
   width: 40px;
