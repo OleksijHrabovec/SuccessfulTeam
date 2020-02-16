@@ -1,6 +1,6 @@
 
 .light-background {
-  background-color: $grey-color;
+  background-color: #f1f1f1;
   height: 100%;
   padding-bottom: 28px;
 }
@@ -68,6 +68,33 @@
   background-image: url(../images/icons/fire/fire.png);
 }
 
-// @media (min-width: rem(768)) {
-    
-// }
+@media (min-width: rem(768)) {
+  .guarantees__list {
+    display: block;
+}
+  .guarantees__item::after {
+    content: "";
+    display: table;
+    clear: both;
+    position: absolute;
+    width: 20px;
+    height: 28px;
+    fill: #ffffff;
+    top: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 3px;
+    background-image: url(../images/icons/fire/fire.png);
+  }
+  .guarantees__item:not(:last-child)::before {
+    content: "";
+    display: table;
+    clear: both;
+    position: absolute;
+    border-left: 1px solid;
+    border-left-style: dotted;
+    height: 110%;
+    color: #9d9d95;
+    right: 98%;
+  }
+}
