@@ -1,3 +1,11 @@
 .header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__display-none{
+  display: none;
+}
+#icon-checkbox {
+  display: none;
 }
