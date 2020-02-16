@@ -1,29 +1,4 @@
 
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-
-body {
-  font-family: "Montserrat", "Arial", sans-serif;
-  background-color: #ffffff;
-  font-size: 15px;
-  margin: 0;
-  padding: 0;
-}
-  
-
 .light-background {
   background-color: $guarantees-bg-color;
   height: 100%;
@@ -90,8 +65,4 @@ body {
   right: 91%;
   background-color: #9d9d44;
   background-image: url(../images/icons/fire/Fire.svg);
-}
-
-.guarantees__item {
-  
 }
