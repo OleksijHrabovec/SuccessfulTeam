@@ -1,35 +1,45 @@
 .footer {
-    font-size: rem(18);
-    font-weight: 600;
+    font-size: rem(20);
+    font-weight: 700;
     line-height: rem(38);
     max-width: rem(320);
     max-height: rem(254);
+    $main-font: $main-font;
+}
+
+.footer__number-block {
     font-family: $main-font;
-}
-
-.footer__number {
-    text-align: center;
-}
-
-.footer__icon__telephone {
-    width: 20px;
-    height: 20px;
-}  
-
-.footer__link__instagram {
-    width: 37px;
-    height: 37px;
     display: flex;
     justify-content: center;
     align-items: center;
+    letter-spacing: rem(1);
+    margin-top: rem(34);
+    font-weight: 700;
+}
+
+.footer__icon_telephone {
+    width: rem(20);
+    height: rem(20);
+    fill: #ff7316;
+    padding-right: rem(8);
+}  
+
+.footer__link_instagram {
+    width: rem(37);
+    height: rem(37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: rem(24) auto rem(20);
 }
 
 .copyright {
     font-size: rem(11);
+    font-weight: 500;
     line-height: rem(38);
-    color: $footer-gray-color;
+    color: #747778;
     height: 72px;
-    background-color: $black-bg-color;
+    background-color: #111517;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,5 +51,5 @@
 }
 
 .footer__logo_img {
-    text-align: center;
+    margin: 0 auto rem(14);
 }
