@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 80%;
-    color: $white-txt-color;
+    color: $white-color;
     max-width: rem(280);
     margin: auto;
     text-align: center;
@@ -34,7 +34,7 @@
     justify-content: center;
     width: rem(280);
     height: rem(50);    
-    border: rem(1) solid $white-bg-color;
+    border: rem(1) solid #111517;
     background-color: transparent;
     padding-left: rem(20);
     margin: 0 auto rem(20);
@@ -42,8 +42,8 @@
 
 .form__input:focus {
     font-family: $main-font;
-    color: $white-txt-color;
-    outline: $white-txt-color;
+    color: $white-color;
+    outline: $white-color;
 }
 
 .input__phone {
@@ -51,11 +51,11 @@
 }
 
 .text_orange {
-    color: $orange-txt-color;
+    color: $orange-color;
 }
 
 .form__input::placeholder {
-    color: $white-txt-color;
+    color: $white-color;
     font-size: rem(13);
     font-weight: 600;
 }
