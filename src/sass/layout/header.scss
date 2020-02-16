@@ -35,15 +35,25 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  @include for-size (desktop-up) {
+    display: none;
+  }
 }
 .burger__item {
   height: 2px;
   width: 24px;
   background-color: $min-dark-color ;
 }
+.menu {
+  display: flex;
+  justify-content: center;
+
+  
+}
 .nav__list{
   padding: 0 20px 0 33px ;
   margin-bottom: 45px;
+  
 }
 .nav__item {
   font-size: 20px;
@@ -54,10 +64,10 @@
   
   &:hover {
     color: $orange-color;
-
   }
+
 }
-.header__btn {
+.header__btn__opacity {
   background-color: rgba(0,0,0,0.0);
   border: 2px solid $orange-color;
   color: $orange-color;
@@ -79,4 +89,53 @@
 }
 .z-index {
   z-index: 10;
+}
+.header__btn {
+  display: none;
+  @include for-size (tablet-portrait-up) {
+    display: inline-block;
+
+  }
+
+}
+.btn-and-burger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include for-size (tablet-portrait-up) {
+    min-width: 317px;
+  }
+
+  
+
+
+} 
+.overlay__btn {
+  @include for-size (tablet-portrait-up) {
+    display: none;
+  }
+
+}
+.nav__grey-list {
+  display: none;
+  @include for-size (desktop-up) {
+    display: flex;
+  }
+    
+}
+.nav__grey-item {
+  @include for-size (desktop-up) {
+    color: $grey-color;
+    margin-right: 20px;
+  
+    
+  }
+}
+
+.nav__grey-item:hover {
+  color: $orange-color;
+}
+.logo-01 {
+  width: 80px;
+  height: 40px;
 }
