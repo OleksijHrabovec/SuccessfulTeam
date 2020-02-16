@@ -30,11 +30,11 @@
      height: rem(268);
      width: rem(280);
      display: block;
-     background-color:$white-bg-color;
+     background-color:$white-color;
     margin-bottom: rem(17);
 }
 .advantage__box-icons-svg {
-   fill: $grad-color-end;
+   fill: $orange-color;
     height: rem(50);
     width: rem(60);
     
@@ -43,7 +43,7 @@
 .advantage__title {
     font-size: rem(13);
     line-height: rem(20);
-    color: $dark-txt-color;
+    color: $black-color;
     font-weight: 500;
     text-align: center;
     margin-bottom: rem(45);
@@ -54,17 +54,17 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     line-height: rem(20);
-    color:$grey-txt-color;
+    color:$grey-color;
     text-align: center;
    padding: rem(0) rem(25);
 }
 .advantage__icons-item:hover,
 .advantage__icons-item:focus {
-    background-color:$grad-color-end;
+    background-color:$orange-color;
     transition: 400ms linear;
 }
 .advantage__title::after {
-    background-color: $grad-color-end;
+    background-color: $orange-color;
     content: '';
     position: absolute;
     width: rem(25);
@@ -78,17 +78,17 @@
   
    
    .advantage__icons-item:hover .advantage__box-icons-svg {
-    color: $white-bg-color;
-    fill:$white-bg-color;
+    color: $white-color;
+    fill:$white-color;
 }
    .advantage__icons-item:hover .advantage__title,
    .advantage__icons-item:hover .advantage__text {
-       color: $white-bg-color;
+       color: $white-color;
      
    }
 
    .advantage__icons-item:hover .advantage__title::after {
-       background-color: $white-bg-color;
+       background-color: $white-color;
       
    }
 
