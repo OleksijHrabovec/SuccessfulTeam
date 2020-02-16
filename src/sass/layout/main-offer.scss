@@ -4,11 +4,15 @@
 }
 .main-offer__title {
   margin: 0 0 30px;
+  @include for-size (tablet-portrait-up) {
+    font-size: 48px;
+ }
 }
 .main-offer__text {
   margin: 0;
   font-size: 15px;
   line-height: 22px;
+
 }
 .main-offer__text_grey {
   color: $grey-color;
@@ -34,12 +38,25 @@
 
 .main-offer__img {
   margin-bottom: 22px;
+  @include for-size (tablet-portrait-up) {
+    width: 900px;
+ }
 
+}
+.main-offer__list {
+  @include for-size (tablet-portrait-up) {
+    display: flex;
+    justify-content: space-between;
+  }
+ 
 }
 .main-offer__item {
   display: flex;
   position: relative;
   font-weight: 700;
+  @include for-size (tablet-portrait-up) {
+    width: 135px;
+  }
 }
 
 .main-offer__item:not(:last-child) {
@@ -48,11 +65,12 @@
 .main-offer__svg-wrapper {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  
   margin-right: 15px;
   fill:$orange-color ;
 }
 .main-offer__svg {
+  padding-top: 7px;
   border: 2px solid $orange-color;
   width:58px;
   height:58px;
@@ -67,7 +85,12 @@
   background-color: $white-color;
   display: block;
   height: 36px;
-  width: 40px;
-  top: 12px;
-  left: 25px;
+  width: 10px;
+  top: 21px;
+  left: 60px;
+}
+.main-offer__flex {
+  @include for-size (tablet-portrait-up) {
+    display: flex;
+ }
 }
