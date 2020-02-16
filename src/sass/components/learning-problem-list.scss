@@ -33,7 +33,8 @@
 }
 
 .points__content-wrapper {
-    max-width: 224px;
+    // max-width: 224px;
+    display: inline-block;
     margin: 0 auto;
 }
 
@@ -51,6 +52,17 @@
     position: absolute;
     left: 50%;
     width: calc(100% - 30px);
+}
+
+.points__item {
+    @include for-size (tablet-portrait-up) {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+    @include for-size (desktop-up) {
+        width: 30%;
+    }
 }
 
 
@@ -104,8 +116,6 @@
     padding-bottom: 40px;
 }
 
-.subjects__item {}
-
 .subjects__title {
     display: block;
     color: $orange-color;
@@ -133,10 +143,6 @@
     visibility: hidden;
 }
 
-.topics {}
-
-.topics__item {}
-
 .topics__title {
     color: $grey-color;
     font-size: 11px;
@@ -147,16 +153,6 @@
 }
 
 @media (min-width: 768px) {
-    .sec-problems__content-wrapper,
-    .sec-program__content-wrapper {
-        min-width: 688px;
-    }
-    .points__points-wrapper {
-        min-width: 688px;
-    }
-    .points__content-wrapper {
-        min-width: 580px;
-    }
     .semesters {
         display: flex;
         flex-direction: column;
@@ -175,7 +171,40 @@
     }
 }
 
-@media (min-width: 1280px) {}
+@media (min-width: 1280px) {
+    .points__content-wrapper {
+        min-width: 1010px;
+        border-top: 2px solid #546264;
+    }
+    .semesters {
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+        justify-content: space-between;
+    }
+    .semesters::before {
+        display: none;
+    }
+    .semesters__item {
+        flex: 0 1 calc(100% / 5);
+        flex-direction: column;
+    }
+    .semesters__item::before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: $orange-color;
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        top: -26px;
+        left: 0;
+    }
+    .subjects {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 
 /*POINTS LIST STYLES*/
@@ -184,10 +213,14 @@
     display: block;
     // position: absolute;
     background-color: $white-color;
-    padding-top: 22px;
+    padding: 22px;
+    @include for-size (tablet-portrait-up) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 }
-
-.points__item {}
 
 .points__title {
     color: $orange-color;
@@ -209,7 +242,7 @@
     height: 2px;
     background-color: $orange-color;
     left: 0px;
-    top: 13px;
+    top: 8px;
 }
 
 .points__description {
