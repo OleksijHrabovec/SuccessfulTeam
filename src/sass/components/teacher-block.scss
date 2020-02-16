@@ -1,6 +1,6 @@
 .section-teacher {
-  padding-bottom: rem(55);
-  background-color: #fff;
+    padding-bottom: rem(55);
+    background-color: #fff;
 }
 
 .section-teacher__title {
@@ -9,68 +9,60 @@
 }
 
 .img-wrapper {
-  height: rem(214);
-  background-image: url(../images/photos/teacher@1x.jpg);
-  background-position: 0 0;
-  background-size: cover;
-  margin-bottom: rem(25);
+    height: rem(214);
+    background-image: url(../images/photos/teacher@1x.jpg);
+    background-position: 0 0;
+    background-size: cover;
 }
 
 .section-teacher {
-  &__list {
-    position: relative;
-    // margin-bottom: rem(20);
-  }
-
-  &__list::after {
-    position: absolute;
-    content: '';
-    display: block;
-    background-color: $orange-color;
-    width: rem(25);
-    height: rem(2);
-  }
-
-  &__name {
-    @include font-settings(rem(16), rem(30));
-    $main-font: $main-font;
-    color: $black-color;
-    font-weight: bold;
-    border-bottom: rem(1) solid $min-grey-color;
-    margin-bottom: rem(25);
-  }
-
-  &__list-text {
-    @include font-settings(rem(13), rem(20));
-    font-family: $main-font;
-    color: $black-color;
-    font-weight: bold;
-  }
-
-  &__desc {
-    @include font-settings(rem(11), rem(20));
-    font-family: $main-font;
-    color: $grey-color;
-    padding: 0, rem(16);
-    padding-top: rem(20);
-  }
+    &__list {
+        position: relative;
+        margin-bottom: rem(20);
+    }
+    &__list::after {
+        position: absolute;
+        content: '';
+        display: block;
+        background-color: $orange-color;
+        width: rem(25);
+        height: rem(2);
+    }
+    &__name {
+        @include font-settings(rem(16), rem(30));
+        $main-font: 'Montserrat';
+        color: $black-color;
+        font-weight: bold;
+        border-bottom: rem(1) solid $grey-color;
+    }
+    &__list-text {
+        @include font-settings(rem(13), rem(20));
+        $main-font: 'Montserrat';
+        color: $black-color;
+        font-weight: bold;
+    }
+    &__desc {
+        @include font-settings(rem(11), rem(20));
+        $main-font: 'Myriad Pro';
+        color: $grey-color;
+        padding: rem(20), rem(16), 0;
+    }
 }
 
 .section-teacher__list-item {
-  padding-left: rem(35);
-  position: relative;
-  margin-bottom: rem(25);
-
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: center;
-    top: 0;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    background-image: url(../images/icons/check/icon-check.png);
-  }
+    padding-left: rem(35);
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        background-image: url(../images/icons/check/Check.svg);
+        // fill: $orange-color;
+    }
 }
