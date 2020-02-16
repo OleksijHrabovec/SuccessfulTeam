@@ -2,15 +2,87 @@
   background-color: $white-color;
 }
 
-.section-testimonials__list-item:nth-child(-n + 3) {
-  display: none;
+.section-testimonials__title {
+  text-align: center;
+  padding-top: rem(50);
+  margin-bottom: rem(25);
 }
 
+.section__title_span {
+  display: block;
+}
+
+.testimonials-block {
+  margin-bottom: rem(20);
+
+  &:hover {
+    box-shadow: 4px 6.928px 15.54px 5.46px rgba(0, 0, 0, 0.04);
+  }
+
+  &__card {
+    padding-top: rem(20);
+    margin: 0 auto;
+  }
+
+  &__text {
+    width: rem(260);
+    margin: 0 auto rem(16);
+  }
+
+  &__name {
+    @include font-settings(rem(13), rem(30));
+    font-family: $main-font;
+    color: $orange-color;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: rem(8);
+  }
+
+  &__info {
+    @include font-settings(rem(11), rem(17));
+    font-family: $main-font;
+    color: $grey-color;
+    text-align: center;
+    margin-bottom: rem(8);
+  }
+
+  &__desc {
+    @include font-settings(rem(11), rem(20));
+    text-align: center;
+    font-weight: bold;
+    font-family: $main-font;
+    color: $black-color;
+    padding-bottom: rem(20);
+  }
+}
+
+.testimonials-block__link {
+  margin: 0 auto;
+  cursor: pointer;
+
+  &_svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.testimonials-block__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// LIST
+.section-testimonials__list-item {
+  margin-right: rem(10);
+}
+
+// ONLY FOR MOBILE -- NEED TO DO MEDIA
 .hidden {
   display: none;
 }
 
-.slider-btn {
+.wrapper-btn {
   position: relative;
   margin: auto;
   display: flex;
@@ -18,36 +90,34 @@
   justify-content: center;
 }
 
-.slider-ctrl {
+.ctrl {
   position: absolute;
   display: inline-block;
   border: 0;
   margin: 0;
   padding: 0;
+  width: rem(30);
+  height: rem(20);
   top: 50%;
   transform: translateY(-50%);
+  // background-color: #f1f155;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
 }
 
-.slider-ctrl-prev {
-  position: absolute;
+.ctrl-prev {
   left: 0;
-  background-image: url(../images/icons/icon-prev.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url(../images/icons/icon-prev.png);
 }
 
-.slider-ctrl-next {
-  position: absolute;
+.ctrl-next {
   right: 0;
-  background-image: url(../img/icons/icon-next.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url(../images/icons/icon-next.png);
 }
 
-.width280 {
-  width: 280px;
-}
-
+// IMAGE WRAPPER
 .image-wrapper {
   border-radius: 50%;
   width: rem(54);
@@ -93,59 +163,8 @@
   background-image: url(../images/photos/graduate7@1x.png);
 }
 
-.testimonials-block {
-  &__card {
-    padding-top: rem(20);
-    margin: 0 auto;
-  }
-
-  &__box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  &__link {
-    margin: 0 auto;
-
-    &_svg {
-      width: 25px;
-      height: 25px;
-    }
-  }
-
-  &__text {
-    width: rem(260);
-    margin: 0 auto;
-  }
-
-  &__name {
-    @include font-settings(rem(13), rem(30));
-    font-family: 'Montserrat';
-    color: $orange-color;
-    font-weight: bold;
-    text-align: center;
-    width: rem(280);
-  }
-
-  &__info {
-    @include font-settings(rem(11), rem(17));
-    font-family: 'Montserrat';
-    color: $grey-color;
-    text-align: center;
-  }
-
-  &__desc {
-    @include font-settings(rem(11), rem(20));
-    text-align: center;
-    font-weight: bold;
-    font-family: 'Montserrat';
-    color: $black-color;
-    padding-bottom: rem(20);
-  }
-}
-
 .read-more {
   display: inline-block;
   color: $orange-color;
+  cursor: pointer;
 }
