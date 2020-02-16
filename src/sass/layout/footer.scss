@@ -1,3 +1,8 @@
+.footer__container {
+    width: rem(320);
+    margin: 0 auto;
+}
+
 .footer {
     font-size: rem(20);
     font-weight: 700;
@@ -30,11 +35,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: rem(24) auto rem(20);
+    margin: rem(20) auto rem(24);
 }
 
 .copyright {
     font-size: rem(11);
+    font-family: $main-font;
     font-weight: 500;
     line-height: rem(38);
     color: #747778;
@@ -52,4 +58,30 @@
 
 .footer__logo_img {
     margin: 0 auto rem(14);
+}
+
+@media (min-width: rem(768)) {
+
+    .footer__container {
+        width: rem(768);
+    }
+
+    .copyright {
+        text-align: left;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer__logo {
+        order: 1;
+    }
+
+    .instagram_icon {
+        order: 5;
+    }
+
 }
