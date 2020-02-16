@@ -3,13 +3,22 @@
     padding-bottom: rem(54);
 }
 .advantage_list {
+    font-size: rem(20);
     display: flex;
     justify-content: center;
     padding-bottom: rem(42);
+     @include for-size (tablet-portrait-up){
+              font-size: rem(26);
+              font-family: $main-font;
+    }
+      @include for-size (desktop-up){
+              font-size: rem(42);
+              font-weight: 800;
+             justify-content: flex-start;
+             font-family: $main-font;
+    }
 }
-.advantage__box {
-  
-}
+
 .advantage__box-icons-list {
   display: flex;
   margin: 0 auto;
@@ -20,6 +29,21 @@
         }
         @include for-size (desktop-up) {
             justify-content: space-between;
+        }
+        .advantage__icons-item {
+            width: rem(392);
+            height: rem(342);
+        }
+        .advantage__title{
+            font-size: rem(18);
+            line-height: rem(29);
+                @include for-size (desktop-up){
+                   font-size: rem(18);
+            }
+        }
+        .advantage__text{
+            font-size: rem(15);
+            line-height: rem(31);
         }
     }
 .box__icons-svg {
@@ -41,6 +65,7 @@
      display: block;
      background-color:$white-color;
     margin-bottom: rem(17);
+   
 }
 .advantage__box-icons-svg {
    fill: $orange-color;
