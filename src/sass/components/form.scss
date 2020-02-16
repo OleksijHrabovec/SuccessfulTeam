@@ -4,7 +4,6 @@
     background-size: cover;
     background-position-x: 80%;
     color: $white-txt-color;
-    font-family: $main-font;
     max-width: rem(280);
     margin: auto;
     text-align: center;
@@ -12,6 +11,7 @@
 }
 
 .form__heading {
+    font-family: $main-font;
     font-size: rem(14);
     line-height: rem(24);
     font-weight: 700;
@@ -21,6 +21,7 @@
 }
 
 .form__text {
+    font-family: $main-font;
     font-size: rem(11);
     line-height: rem(20);
     font-weight: 500;
@@ -37,6 +38,12 @@
     background-color: transparent;
     padding-left: rem(20);
     margin: 0 auto rem(20);
+}
+
+.form__input:focus {
+    font-family: $main-font;
+    color: $white-txt-color;
+    outline: $white-txt-color;
 }
 
 .input__phone {
